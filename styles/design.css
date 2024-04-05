@@ -1,0 +1,111 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #a0d1df;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f6ebbe;
+    box-shadow: 0 2px 4px rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    color: #333;
+    margin: 0;
+}
+
+header p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.controls {
+    margin: 2rem 0;
+}
+
+.controls label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.controls select, .controls button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#generateJoke {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#generateJoke:hover {
+    background-color: #45a049;
+}
+
+#jokeDisplay {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    font-size: 1.2rem;
+}
+
+footer {
+    margin-top: 2rem;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+@media (max-height: 800px) {
+    .container {
+        height: auto;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    header, footer {
+        padding: 0 20px;
+    }
+
+    .controls select, .controls button {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laughter Hub</title>
+    <link rel="stylesheet" href="styles/design.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Click to Laugh</h1>
+            <p>"Professor Stephen, keep hitting the button until you laugh."</p>
+        </header>
+        <main>
+            <div class="controls">
+                <label for="jokeCategory">Choose a joke category:</label>
+                <select id="jokeCategory">
+                    <option value="Any">Any</option>
+                    <option value="Programming">Programming</option>
+                    <option value="Miscellaneous">Miscellaneous</option>
+                </select>
+                <label for="jokeType">Joke type:</label>
+                <select id="jokeType">
+                    <option value="single">Single</option>
+                    <option value="twopart">Two Part</option>
+                </select>
+                <button id="generateJoke">Laugh Now</button>
+            </div>
+            <section id="jokeDisplay">Hit the 'Laugh Now' button to generate a joke!</section>
+        </main>
+        <footer>
+            <p>Jokes provided by <a href="https://jokeapi.dev/" target="_blank">JokeAPI</a>.
+        </footer>
+        
+    </div>
+    <script src="interactive.js"></script>
+</body>
+</html>
